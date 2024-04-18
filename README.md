@@ -6,7 +6,7 @@ To do:
 Install dependencies located in requirements.txt with pip:
 pip3 install -r requirements.txt
 
-!!!! Add python path !!! -> export PYTHONPATH=.
+!!!! Add python path !!! -> export PYTHONPATH=. ( in PowerShell:  $env:PYTHONPATH="." )
 
 To run robot script:
 robot .\Tests\test_cases.robot
