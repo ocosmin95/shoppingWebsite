@@ -1,7 +1,7 @@
 urllib3==1.26.9
 selenium==4.7.2
 robotframework==5.0.1
-robotframework-requests==0.9.3  # Would like to clean this one in favor of requests
+robotframework-requests==0.9.3 
 PyYAML==6.0
 jsonschema==4.6.1
 jsonref-ap==0.3.dev0
