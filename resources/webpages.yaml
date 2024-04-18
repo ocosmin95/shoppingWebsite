@@ -1,0 +1,3 @@
+test_env:
+  Saucedemo:
+    url: https://www.saucedemo.com/

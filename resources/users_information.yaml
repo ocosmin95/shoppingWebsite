@@ -1,0 +1,24 @@
+user1:
+  first_name: 'Popescu'
+  last_name: 'Mirel'
+  zip_code: 112556
+user2:
+  first_name: 'Florescu'
+  last_name: 'Adrian'
+  zip_code: 212556
+user3:
+  first_name: 'Sandulescu'
+  last_name: 'Alina'
+  zip_code: 212554
+user4:
+  first_name: 'Mistodie'
+  last_name: 'Andreea'
+  zip_code: 412554
+user5:
+  first_name: 'Puscasu'
+  last_name: 'Madalin'
+  zip_code: 812544
+negative:
+  first_name: ''
+  last_name: 'Madalin'
+  zip_code: 812544

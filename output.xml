@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.13 on win32)" generated="2024-04-18T21:16:36.372138" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\ioancea\shoppingWebsite\Tests">
+<suite id="s1-s1" name="Test Cases" source="C:\Users\ioancea\shoppingWebsite\Tests\test_cases.robot">
+<test id="s1-s1-t1" name="User logged in with standard_user" line="10">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="User navigate to webpage in chrome" owner="library.AppLibrary" source_name="user navigate to webpage in ${browser}">
+<msg time="2024-04-18T21:16:36.894275" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" start="2024-04-18T21:16:36.502435" elapsed="2.354039"/>
+</kw>
+<arg>User navigate to webpage in chrome</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-04-18T21:16:36.502435" elapsed="2.354039"/>
+</kw>
+<kw name="Given user logs in with credentials standard_user" owner="library.AppLibrary" source_name="user logs in with credentials ${user}">
+<msg time="2024-04-18T21:16:39.102355" level="INFO">Element is present on the page
+Element is present on the page
+Element is present on the page
+Element is present on the page
+Element is invisible on the page</msg>
+<status status="PASS" start="2024-04-18T21:16:38.856474" elapsed="0.245881"/>
+</kw>
+<kw name="When user add 3 product/s to cart" owner="library.AppLibrary" source_name="user add ${number} product/s to cart">
+<msg time="2024-04-18T21:16:39.135364" level="INFO">Element with text // Products // present in page</msg>
+<msg time="2024-04-18T21:16:39.335454" level="INFO">Element is present on the page
+Element is present on the page</msg>
+<status status="PASS" start="2024-04-18T21:16:39.103357" elapsed="0.232097"/>
+</kw>
+<kw name="Then verify product/s are added to cart" owner="library.AppLibrary">
+<msg time="2024-04-18T21:16:39.352589" level="INFO">Element with text // Your Cart // present in page</msg>
+<msg time="2024-04-18T21:16:39.358588" level="INFO">All products are added to cart!</msg>
+<msg time="2024-04-18T21:16:39.358588" level="INFO">Element is present on the page</msg>
+<status status="PASS" start="2024-04-18T21:16:39.335454" elapsed="0.023134"/>
+</kw>
+<kw name="And proceed to Checkout" owner="library.AppLibrary">
+<msg time="2024-04-18T21:16:39.410590" level="INFO">Element is present on the page</msg>
+<status status="PASS" start="2024-04-18T21:16:39.358588" elapsed="0.052002"/>
+</kw>
+<kw name="And complete user information" owner="library.AppLibrary">
+<msg time="2024-04-18T21:16:39.426589" level="INFO">Element with text // Checkout: Your Information // present in page</msg>
+<msg time="2024-04-18T21:16:39.620906" level="INFO">Element is present on the page
+Element is present on the page
+Element is present on the page
+Element is present on the page</msg>
+<status status="PASS" start="2024-04-18T21:16:39.411590" elapsed="0.209316"/>
+</kw>
+<kw name="When continue to checkout" owner="library.AppLibrary">
+<msg time="2024-04-18T21:16:39.671215" level="INFO">Element is present on the page</msg>
+<status status="PASS" start="2024-04-18T21:16:39.621959" elapsed="0.050252"/>
+</kw>
+<kw name="Then verify checkout overview page" owner="library.AppLibrary">
+<msg time="2024-04-18T21:16:39.681213" level="INFO">Element with text // Checkout: Overview // present in page</msg>
+<msg time="2024-04-18T21:16:39.685212" level="INFO">All products are present in checkout page!</msg>
+<msg time="2024-04-18T21:16:39.696213" level="INFO">Element with text // Payment Information: // present in page</msg>
+<msg time="2024-04-18T21:16:39.707213" level="INFO">Element with text // Shipping Information: // present in page</msg>
+<msg time="2024-04-18T21:16:39.724354" level="INFO">Element with text // Price Total // present in page</msg>
+<msg time="2024-04-18T21:16:39.724354" level="INFO">Element is present on the page
+Element is present on the page
+Element is present on the page
+Element is present on the page</msg>
+<status status="PASS" start="2024-04-18T21:16:39.672211" elapsed="0.052143"/>
+</kw>
+<kw name="When finish checkout" owner="library.AppLibrary">
+<msg time="2024-04-18T21:16:39.757900" level="INFO">Element is present on the page</msg>
+<status status="PASS" start="2024-04-18T21:16:39.725355" elapsed="0.032545"/>
+</kw>
+<kw name="Then verify checkout was successful" owner="library.AppLibrary">
+<msg time="2024-04-18T21:16:39.772959" level="INFO">Element with text // Checkout: Complete! // present in page</msg>
+<msg time="2024-04-18T21:16:39.772959" level="INFO">Checkout was completed successfully!</msg>
+<msg time="2024-04-18T21:16:39.772959" level="INFO">Element is present on the page</msg>
+<status status="PASS" start="2024-04-18T21:16:39.758900" elapsed="0.015062"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Close browser" owner="library.AppLibrary">
+<status status="PASS" start="2024-04-18T21:16:39.773962" elapsed="2.156778"/>
+</kw>
+<arg>Close browser</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-04-18T21:16:39.773962" elapsed="2.156778"/>
+</kw>
+<tag>Debug</tag>
+<status status="PASS" start="2024-04-18T21:16:36.501435" elapsed="5.429305"/>
+</test>
+<test id="s1-s1-t2" name="User logged in with locked_out_user" line="22">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="User navigate to webpage in chrome" owner="library.AppLibrary" source_name="user navigate to webpage in ${browser}">
+<msg time="2024-04-18T21:16:46.334716" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" start="2024-04-18T21:16:46.031821" elapsed="2.287900"/>
+</kw>
+<arg>User navigate to webpage in chrome</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-04-18T21:16:46.031821" elapsed="2.287954"/>
+</kw>
+<kw name="Given user logs in with credentials locked_out_user" owner="library.AppLibrary" source_name="user logs in with credentials ${user}">
+<msg time="2024-04-18T21:16:51.676617" level="INFO">Element is present on the page
+Element is present on the page
+Element is present on the page
+Element is present on the page</msg>
+<msg time="2024-04-18T21:16:51.676617" level="FAIL">User cannot login!</msg>
+<status status="FAIL" start="2024-04-18T21:16:48.319775" elapsed="3.402918">User cannot login!</status>
+</kw>
+<kw name="When user add 3 product/s to cart" owner="library.AppLibrary" source_name="user add ${number} product/s to cart">
+<status status="NOT RUN" start="2024-04-18T21:16:51.722693" elapsed="0.000000"/>
+</kw>
+<kw name="Then verify product/s are added to cart" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:16:51.722693" elapsed="0.000000"/>
+</kw>
+<kw name="And proceed to Checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:16:51.722693" elapsed="0.000000"/>
+</kw>
+<kw name="And complete user information" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:16:51.722693" elapsed="0.000000"/>
+</kw>
+<kw name="When continue to checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:16:51.722693" elapsed="0.000000"/>
+</kw>
+<kw name="Then verify checkout overview page" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:16:51.722693" elapsed="0.000000"/>
+</kw>
+<kw name="When finish checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:16:51.722693" elapsed="0.000000"/>
+</kw>
+<kw name="Then verify checkout was successful" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:16:51.723697" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Close browser" owner="library.AppLibrary">
+<status status="PASS" start="2024-04-18T21:16:51.723697" elapsed="2.387357"/>
+</kw>
+<arg>Close browser</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-04-18T21:16:51.723697" elapsed="2.387357"/>
+</kw>
+<tag>Debug</tag>
+<status status="FAIL" start="2024-04-18T21:16:46.031821" elapsed="8.079233">User cannot login!</status>
+</test>
+<test id="s1-s1-t3" name="User logged in with problem_user" line="34">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="User navigate to webpage in chrome" owner="library.AppLibrary" source_name="user navigate to webpage in ${browser}">
+<msg time="2024-04-18T21:16:54.437391" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" start="2024-04-18T21:16:54.112048" elapsed="2.181311"/>
+</kw>
+<arg>User navigate to webpage in chrome</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-04-18T21:16:54.112048" elapsed="2.181311"/>
+</kw>
+<kw name="Given user logs in with credentials problem_user" owner="library.AppLibrary" source_name="user logs in with credentials ${user}">
+<msg time="2024-04-18T21:16:56.572558" level="INFO">Element is present on the page
+Element is present on the page
+Element is present on the page
+Element is present on the page
+Element is invisible on the page</msg>
+<status status="PASS" start="2024-04-18T21:16:56.294354" elapsed="0.278204"/>
+</kw>
+<kw name="When user add 3 product/s to cart" owner="library.AppLibrary" source_name="user add ${number} product/s to cart">
+<msg time="2024-04-18T21:16:56.593578" level="INFO">Element with text // Products // present in page</msg>
+<msg time="2024-04-18T21:16:56.793997" level="INFO">Element is present on the page
+Element is present on the page</msg>
+<status status="PASS" start="2024-04-18T21:16:56.573568" elapsed="0.220429"/>
+</kw>
+<kw name="Then verify product/s are added to cart" owner="library.AppLibrary">
+<msg time="2024-04-18T21:16:56.810002" level="INFO">Element with text // Your Cart // present in page</msg>
+<msg time="2024-04-18T21:16:56.817999" level="INFO">Element is present on the page</msg>
+<msg time="2024-04-18T21:16:56.817999" level="FAIL">Not all products we're added to cart!</msg>
+<status status="FAIL" start="2024-04-18T21:16:56.793997" elapsed="0.025011">Not all products we're added to cart!</status>
+</kw>
+<kw name="And proceed to Checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:16:56.819008" elapsed="0.000000"/>
+</kw>
+<kw name="And complete user information" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:16:56.819008" elapsed="0.000000"/>
+</kw>
+<kw name="When continue to checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:16:56.819008" elapsed="0.000000"/>
+</kw>
+<kw name="Then verify checkout overview page" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:16:56.819008" elapsed="0.000000"/>
+</kw>
+<kw name="When finish checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:16:56.819008" elapsed="0.000000"/>
+</kw>
+<kw name="Then verify checkout was successful" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:16:56.819008" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Close browser" owner="library.AppLibrary">
+<status status="PASS" start="2024-04-18T21:16:56.820006" elapsed="2.114735"/>
+</kw>
+<arg>Close browser</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-04-18T21:16:56.820006" elapsed="2.114735"/>
+</kw>
+<tag>Debug</tag>
+<status status="FAIL" start="2024-04-18T21:16:54.112048" elapsed="4.822693">Not all products we're added to cart!</status>
+</test>
+<test id="s1-s1-t4" name="User logged in with performance_glitch_user" line="46">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="User navigate to webpage in chrome" owner="library.AppLibrary" source_name="user navigate to webpage in ${browser}">
+<msg time="2024-04-18T21:17:07.408601" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" start="2024-04-18T21:16:58.935764" elapsed="10.296991"/>
+</kw>
+<arg>User navigate to webpage in chrome</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-04-18T21:16:58.935764" elapsed="10.296991"/>
+</kw>
+<kw name="Given user logs in with credentials performance_glitch_user" owner="library.AppLibrary" source_name="user logs in with credentials ${user}">
+<msg time="2024-04-18T21:17:14.469318" level="INFO">Element is present on the page
+Element is present on the page
+Element is present on the page
+Element is present on the page</msg>
+<msg time="2024-04-18T21:17:14.469318" level="FAIL">Takes to much time for user to be logged in! Perfomance issue!</msg>
+<status status="FAIL" start="2024-04-18T21:17:09.232755" elapsed="5.250060">Takes to much time for user to be logged in! Perfomance issue!</status>
+</kw>
+<kw name="When user add 3 product/s to cart" owner="library.AppLibrary" source_name="user add ${number} product/s to cart">
+<status status="NOT RUN" start="2024-04-18T21:17:14.482815" elapsed="0.000000"/>
+</kw>
+<kw name="Then verify product/s are added to cart" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:14.482815" elapsed="0.000000"/>
+</kw>
+<kw name="And proceed to Checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:14.482815" elapsed="0.000000"/>
+</kw>
+<kw name="And complete user information" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:14.483814" elapsed="0.000000"/>
+</kw>
+<kw name="When continue to checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:14.483814" elapsed="0.000000"/>
+</kw>
+<kw name="Then verify checkout overview page" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:14.483814" elapsed="0.000000"/>
+</kw>
+<kw name="When finish checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:14.483814" elapsed="0.000000"/>
+</kw>
+<kw name="Then verify checkout was successful" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:14.483814" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Close browser" owner="library.AppLibrary">
+<status status="PASS" start="2024-04-18T21:17:14.483814" elapsed="2.125024"/>
+</kw>
+<arg>Close browser</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-04-18T21:17:14.483814" elapsed="2.125024"/>
+</kw>
+<tag>Debug</tag>
+<status status="FAIL" start="2024-04-18T21:16:58.934741" elapsed="17.674097">Takes to much time for user to be logged in! Perfomance issue!</status>
+</test>
+<test id="s1-s1-t5" name="User logged in with error_user" line="58">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="User navigate to webpage in chrome" owner="library.AppLibrary" source_name="user navigate to webpage in ${browser}">
+<msg time="2024-04-18T21:17:16.942686" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" start="2024-04-18T21:17:16.609842" elapsed="2.545825"/>
+</kw>
+<arg>User navigate to webpage in chrome</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-04-18T21:17:16.609842" elapsed="2.545825"/>
+</kw>
+<kw name="Given user logs in with credentials error_user" owner="library.AppLibrary" source_name="user logs in with credentials ${user}">
+<msg time="2024-04-18T21:17:19.479125" level="INFO">Element is present on the page
+Element is present on the page
+Element is present on the page
+Element is present on the page
+Element is invisible on the page</msg>
+<status status="PASS" start="2024-04-18T21:17:19.155667" elapsed="0.323458"/>
+</kw>
+<kw name="When user add 3 product/s to cart" owner="library.AppLibrary" source_name="user add ${number} product/s to cart">
+<msg time="2024-04-18T21:17:19.513603" level="INFO">Element with text // Products // present in page</msg>
+<msg time="2024-04-18T21:17:19.735660" level="INFO">Element is present on the page
+Element is present on the page</msg>
+<status status="PASS" start="2024-04-18T21:17:19.479125" elapsed="0.257536"/>
+</kw>
+<kw name="Then verify product/s are added to cart" owner="library.AppLibrary">
+<msg time="2024-04-18T21:17:19.750659" level="INFO">Element with text // Your Cart // present in page</msg>
+<msg time="2024-04-18T21:17:19.755663" level="INFO">Element is present on the page</msg>
+<msg time="2024-04-18T21:17:19.755663" level="FAIL">Not all products we're added to cart!</msg>
+<status status="FAIL" start="2024-04-18T21:17:19.736661" elapsed="0.019002">Not all products we're added to cart!</status>
+</kw>
+<kw name="And proceed to Checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:19.756663" elapsed="0.000000"/>
+</kw>
+<kw name="And complete user information" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:19.756663" elapsed="0.000000"/>
+</kw>
+<kw name="When continue to checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:19.756663" elapsed="0.000000"/>
+</kw>
+<kw name="Then verify checkout overview page" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:19.756663" elapsed="0.000000"/>
+</kw>
+<kw name="When finish checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:19.756663" elapsed="0.000000"/>
+</kw>
+<kw name="Then verify checkout was successful" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:19.756663" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Close browser" owner="library.AppLibrary">
+<status status="PASS" start="2024-04-18T21:17:19.757663" elapsed="2.194324"/>
+</kw>
+<arg>Close browser</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-04-18T21:17:19.757663" elapsed="2.194324"/>
+</kw>
+<tag>Debug</tag>
+<status status="FAIL" start="2024-04-18T21:17:16.609842" elapsed="5.342145">Not all products we're added to cart!</status>
+</test>
+<test id="s1-s1-t6" name="User logged in with visual_user" line="70">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="User navigate to webpage in chrome" owner="library.AppLibrary" source_name="user navigate to webpage in ${browser}">
+<msg time="2024-04-18T21:17:30.477869" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" start="2024-04-18T21:17:21.952987" elapsed="10.402433"/>
+</kw>
+<arg>User navigate to webpage in chrome</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-04-18T21:17:21.952987" elapsed="10.402433"/>
+</kw>
+<kw name="Given user logs in with credentials visual_user" owner="library.AppLibrary" source_name="user logs in with credentials ${user}">
+<msg time="2024-04-18T21:17:32.597657" level="INFO">Element is present on the page
+Element is present on the page
+Element is present on the page
+Element is present on the page
+Element is invisible on the page</msg>
+<status status="PASS" start="2024-04-18T21:17:32.356420" elapsed="0.241237"/>
+</kw>
+<kw name="When user add 3 product/s to cart" owner="library.AppLibrary" source_name="user add ${number} product/s to cart">
+<msg time="2024-04-18T21:17:32.632077" level="INFO">Element with text // Products // present in page</msg>
+<msg time="2024-04-18T21:17:32.665077" level="INFO">Element is present on the page</msg>
+<msg time="2024-04-18T21:17:32.666077" level="FAIL">Visual bug, items in the header of the page are overlapping!</msg>
+<status status="FAIL" start="2024-04-18T21:17:32.597657" elapsed="0.080543">Visual bug, items in the header of the page are overlapping!</status>
+</kw>
+<kw name="Then verify product/s are added to cart" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:32.678200" elapsed="0.000000"/>
+</kw>
+<kw name="And proceed to Checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:32.678200" elapsed="0.000000"/>
+</kw>
+<kw name="And complete user information" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:32.678200" elapsed="0.000000"/>
+</kw>
+<kw name="When continue to checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:32.678200" elapsed="0.000000"/>
+</kw>
+<kw name="Then verify checkout overview page" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:32.678200" elapsed="0.000000"/>
+</kw>
+<kw name="When finish checkout" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:32.678200" elapsed="0.000000"/>
+</kw>
+<kw name="Then verify checkout was successful" owner="library.AppLibrary">
+<status status="NOT RUN" start="2024-04-18T21:17:32.678200" elapsed="0.001000"/>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<kw name="Close browser" owner="library.AppLibrary">
+<status status="PASS" start="2024-04-18T21:17:32.679200" elapsed="2.117766"/>
+</kw>
+<arg>Close browser</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2024-04-18T21:17:32.679200" elapsed="2.117766"/>
+</kw>
+<tag>Debug</tag>
+<status status="FAIL" start="2024-04-18T21:17:21.951987" elapsed="12.844979">Visual bug, items in the header of the page are overlapping!</status>
+</test>
+<doc>This is some basic info</doc>
+<status status="FAIL" start="2024-04-18T21:16:36.390102" elapsed="58.407887"/>
+</suite>
+<status status="FAIL" start="2024-04-18T21:16:36.373096" elapsed="58.424893"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="5" skip="0">Debug</stat>
+</tag>
+<suite>
+<stat pass="1" fail="5" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="5" skip="0" id="s1-s1" name="Test Cases">Tests.Test Cases</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-18T21:16:36.894275" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-18T21:16:46.334716" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-18T21:16:54.437391" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-18T21:17:07.408601" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-18T21:17:16.942686" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-18T21:17:30.477869" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\bin\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.61); currently, chromedriver 124.0.6367.60 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
